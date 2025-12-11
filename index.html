@@ -68,9 +68,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-50 dark:bg-[#0f1219] border-b border-gray-200 dark:border-gray-800">
             <div class="px-6 py-4 flex flex-col space-y-3">
-                <a href="#about" class="block text-center bg-emerald-600 dark:bg-emerald-400 text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">About</a>
-                <a href="#skills" class="block text-center bg-emerald-600 dark:bg-emerald-400 text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">Skills</a>
-                <a href="#projects" class="block text-center bg-emerald-600 dark:bg-emerald-400 text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">Projects</a>
+                <a href="#about" class="block text-center bg-blue-950 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">About</a>
+                <a href="#skills" class="block text-center bg-blue-950 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">Skills</a>
+                <a href="#projects" class="block text-center bg-blue-950 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-md font-semibold">Projects</a>
                 <a href="#contact" class="block text-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-md font-medium">Contact</a>
             </div>
         </div>
@@ -92,12 +92,12 @@
                     <span class="font-medium">Welcome!</span> I’m a frontend developer and professional photographer dedicated to creating meaningful digital and visual experiences. I build immersive, user-focused interfaces using modern frontend technologies, ensuring every product feels intuitive and impactful. Beyond development, I capture the moments that matter most as an event and wedding photographer—blending technical skill with artistic vision to tell stories that last a lifetime.
                 </p>
                 <div class="flex flex-wrap items-center gap-6 mt-4">
-                    <a href="https://wa.link/9zkbji" class="bg-blue-950 hover:bg-blue-700 dark:bg-white dark:hover:bg-white text-white dark:text-slate-900 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/20">
+                    <a href="https://wa.link/9zkbji" class="bg-blue-950 hover:bg-blue-700 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-slate-900 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/20">
                         Get in Touch
                     </a>
                     <div class="flex items-center gap-2">
                         <span class="relative flex h-3 w-3">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-950 dark:bg-white"></span>
                         </span>
                         <span class="text-gray-600 dark:text-gray-400 font-medium text-sm">Available now</span>
@@ -121,8 +121,8 @@
             <!-- Left Column: Image with Decorative Border -->
             <div class="relative flex justify-center md:justify-start order-1 sticky top-24">
                 <div class="relative w-full max-w-sm md:max-w-md aspect-square">
-                    <!-- The Green Offset Border (Behind) -->
-                    <div class="absolute -top-4 -left-4 w-full h-full border-4 border-blue-950 dark:border-blue-950 z-0"></div>
+                    <!-- The Offset Border (Behind) -->
+                    <div class="absolute -top-4 -left-4 w-full h-full border-4 border-blue-950 dark:border-white z-0"></div>
                     
                     <!-- The Image -->
                     <img 
@@ -142,8 +142,8 @@
                         About Me
                     </h2>
                     <div class="flex items-center gap-2">
-                        <span class="h-0.5 w-8 bg-emerald-500"></span>
-                        <span class="text-emerald-600 dark:text-emerald-400 font-medium text-sm tracking-widest uppercase">Who Am I?</span>
+                        <span class="h-0.5 w-8 bg-blue-950 dark:bg-white"></span>
+                        <span class="text-blue-950 dark:text-white font-medium text-sm tracking-widest uppercase">Who Am I?</span>
                     </div>
                 </div>
 
@@ -193,30 +193,22 @@
                             <div class="flex flex-wrap items-center gap-6">
                                 <!-- Lightroom -->
                                 <div class="flex flex-col items-center gap-2 group">
-                                    <div class="h-10 w-10 flex items-center justify-center text-3xl text-gray-700 dark:text-gray-300">
-                                        <img src="./assets/photoshop-lightroom-classic_5968510 (1).png" alt="">
-                                    </div>
+                                    <img src="./assets/photoshop-lightroom-classic_5968510 (1).png" class="h-10 w-10 object-contain" alt="Lightroom">
                                     <span class="text-xs font-medium text-gray-500 dark:text-gray-400">Lightroom</span>
                                 </div>
                                 <!-- Photoshop -->
                                 <div class="flex flex-col items-center gap-2 group">
-                                    <div class="h-10 w-10 flex items-center justify-center text-3xl text-gray-700 dark:text-gray-300">
-                                        <img src="./assets/adobe-photoshop_5210800.png" alt="">
-                                    </div>
+                                    <img src="./assets/adobe-photoshop_5210800.png" class="h-10 w-10 object-contain" alt="Photoshop">
                                     <span class="text-xs font-medium text-gray-500 dark:text-gray-400">Photoshop</span>
                                 </div>
                                 <!-- Capture One -->
                                 <div class="flex flex-col items-center gap-2 group">
-                                    <div class="h-10 w-10 flex items-center justify-center text-3xl text-gray-700 dark:text-gray-300">
-                                        <img src="./assets/512px-CAPTURE_ONE_LOGO.svg.png" alt="">
-                                    </div>
+                                    <img src="./assets/512px-CAPTURE_ONE_LOGO.svg.png" class="h-10 w-10 object-contain" alt="Capture One">
                                     <span class="text-xs font-medium text-gray-500 dark:text-gray-400">Capture One</span>
                                 </div>
                                 <!-- Nikon -->
                                 <div class="flex flex-col items-center gap-2 group">
-                                    <div class="h-10 w-10 flex items-center justify-center text-3xl text-gray-700 dark:text-gray-300">
-                                        <img src="./assets/256px-Nikon_Logo.svg.png" alt="">
-                                    </div>
+                                    <img src="./assets/256px-Nikon_Logo.svg.png" class="h-10 w-10 object-contain" alt="Nikon">
                                     <span class="text-xs font-medium text-gray-500 dark:text-gray-400">Nikon</span>
                                 </div>
                             </div>
@@ -227,7 +219,7 @@
 
                 <!-- CTA Button -->
                 <div class="mt-4">
-                    <a href="#" class="inline-block border border-blue-950 text-blue-950 dark:text-white hover:bg-blue-950 hover:text-white dark:hover:text-white px-8 py-3 text-sm font-semibold tracking-wide uppercase transition-all duration-300">
+                    <a href="https://drive.google.com/file/d/1K3NBxFnt3xHHzETxAdh_ez4uS9kmRo9R/view?usp=sharing" class="inline-block border border-blue-950 text-blue-950 dark:text-white hover:bg-blue-950 hover:text-white dark:hover:text-black px-8 py-3 text-sm font-semibold tracking-wide uppercase transition-all duration-300">
                         Download Resume
                     </a>
                 </div>
@@ -235,6 +227,313 @@
             </div>
         </div>
     </section>
+
+    <!-- NEW SKILLS SECTION (Based on the Image) -->
+    <section id="skills" class="py-20 relative bg-white dark:bg-[#0f1219] overflow-hidden transition-colors duration-300">
+        
+        <!-- Optional: Background Code Texture (Decorative) -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none select-none overflow-hidden font-mono text-sm leading-6 dark:text-white text-black">
+            &lt;div&gt; &lt;span&gt; code { display: flex; } &lt;/span&gt; const skills = ['js', 'css']; function create() { return true; } &lt;!-- rendering --&gt; .class { color: #00f; } &lt;/div&gt;
+            &lt;div&gt; &lt;span&gt; code { display: flex; } &lt;/span&gt; const skills = ['js', 'css']; function create() { return true; } &lt;!-- rendering --&gt; .class { color: #00f; } &lt;/div&gt;
+            &lt;div&gt; &lt;span&gt; code { display: flex; } &lt;/span&gt; const skills = ['js', 'css']; function create() { return true; } &lt;!-- rendering --&gt; .class { color: #00f; } &lt;/div&gt;
+            &lt;div&gt; &lt;span&gt; code { display: flex; } &lt;/span&gt; const skills = ['js', 'css']; function create() { return true; } &lt;!-- rendering --&gt; .class { color: #00f; } &lt;/div&gt;
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center">
+            
+            <!-- 1. Top Icon and Dashed Line -->
+            <div class="flex flex-col items-center mb-2">
+                <!-- The < /> Icon floating -->
+                <div class="text-blue-950 text-3xl mb-2 animate-bounce duration-[3000ms] dark:text-white">
+                    Samuel Ifeanyi
+                </div>
+                <!-- The dashed line connector -->
+                <div class="h-16 w-0.5 border-l-2 border-dashed border-gray-400 dark:border-gray-600"></div>
+            </div>
+
+            <!-- 2. Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 relative inline-block">
+                Skills
+                <!-- Cyan underline decoration -->
+                <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-blue-950 rounded-full"></span>
+            </h2>
+            
+            <!-- 3. Subtitle Quote -->
+            <p class="text-gray-500 dark:text-gray-400 mt-6 text-center text-sm md:text-base tracking-wide font-medium">
+                I am striving to never stop learning and improving
+            </p>
+
+            <!-- 4. The Two Cyan Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 w-full max-w-4xl">
+                
+                <!-- Card 1: Web Development -->
+                <div class="bg-cyan-100 dark:bg-cyan-900/30 border border-cyan-200 dark:border-cyan-800 rounded-xl p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 shadow-lg shadow-cyan-500/10">
+                    <div class="text-3xl text-cyan-600 dark:text-cyan-400 mb-4">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-cyan-100 uppercase tracking-wider mb-2">Web Development</h3>
+                    <p class="text-xs font-semibold text-cyan-700 dark:text-cyan-300 bg-cyan-200 dark:bg-cyan-900/60 px-3 py-1 rounded-full">
+                        HTML • CSS • JS • TAILWIND
+                    </p>
+                </div>
+
+                <!-- Card 2: Photography (Replaces 'App Dev' to fit your profile) -->
+                <div class="bg-cyan-100 dark:bg-cyan-900/30 border border-cyan-200 dark:border-cyan-800 rounded-xl p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 shadow-lg shadow-cyan-500/10">
+                    <div class="text-3xl text-cyan-600 dark:text-cyan-400 mb-4">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-cyan-100 uppercase tracking-wider mb-2">Photography</h3>
+                    <p class="text-xs font-semibold text-cyan-700 dark:text-cyan-300 bg-cyan-200 dark:bg-cyan-900/60 px-3 py-1 rounded-full">
+                        LIGHTROOM • PHOTOSHOP • CAPTURE ONE
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 5. Circular Skill Icons (The Orbs) -->
+            <div class="flex flex-wrap justify-center gap-8 mt-16">
+                
+                <!-- HTML5 -->
+                <div class="flex flex-col items-center gap-3 group">
+                    <div class="w-20 h-20 rounded-full bg-[#E34F26] flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#E34F26]/30">
+                        <i class="fa-brands fa-html5 text-white text-4xl"></i>
+                    </div>
+                    <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">HTML</span>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="flex flex-col items-center gap-3 group">
+                    <div class="w-20 h-20 rounded-full bg-[#1572B6] flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#1572B6]/30">
+                        <i class="fa-brands fa-css3-alt text-white text-4xl"></i>
+                    </div>
+                    <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">CSS</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center gap-3 group">
+                    <div class="w-20 h-20 rounded-full bg-[#F7DF1E] flex items-center justify-center shadow-lg shadow-yellow-500/20 group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#F7DF1E]/30">
+                        <i class="fa-brands fa-js text-white text-4xl"></i>
+                    </div>
+                    <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">JS</span>
+                </div>
+
+                <!-- React (Or Tailwind) -->
+                <div class="flex flex-col items-center gap-3 group">
+                    <div class="w-20 h-20 rounded-full bg-[#06B6D4] flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#06B6D4]/30">
+                       <!-- Using Tailwind Icon since that's your stack, or replace with fa-react for React -->
+                       <img src="https://cdn.simpleicons.org/tailwindcss/white" class="w-10 h-10" alt="Tailwind">
+                    </div>
+                    <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">Tailwind</span>
+                </div>
+
+                <!-- Photoshop (Added for your photography side) -->
+                 <div class="flex flex-col items-center gap-3 group">
+                    <div class="w-20 h-20 rounded-full bg-[#31A8FF] flex items-center justify-center shadow-lg shadow-blue-400/20 group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#31A8FF]/30">
+                        <img src="./assets/adobe-photoshop_5210800.png" class="w-10 h-10" alt="Photoshop">
+                    </div>
+                    <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">Photoshop</span>
+                </div>
+
+                <!-- Lightroom (Added for your photography side) -->
+            <div class="flex flex-col items-center gap-3 group">
+            <div class="w-20 h-20 rounded-full bg-[#31A8FF] flex items-center justify-center shadow-lg shadow-blue-400/20
+                    group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#31A8FF]/
+                    30">
+                <img src="./assets/photoshop-lightroom-classic_5968510 (1).png" class="w-10 h-10" alt="Lr">
+                </div>
+             <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">Lightroom</span>
+            </div>
+
+            <!-- Capture One (Added for your photography side) -->
+            <div class="flex flex-col items-center gap-3 group">
+                <div class="w-20 h-20 rounded-full bg-[#31A8FF] flex items-center justify-center shadow-lg shadow-blue-400/20
+                group-hover:scale-110 transition-transform duration-300 ring-4 ring-transparent group-hover:ring-[#31A8FF]/
+                30">
+            <img src="./assets/512px-CAPTURE_ONE_LOGO.svg.png" class="w-10 h-10" alt="Capture One">
+            </div>
+             <span class="font-bold text-gray-600 dark:text-gray-300 uppercase text-sm tracking-wider">Photoshop</span>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION (NEW) -->
+    <section id="projects" class="py-20 px-6 md:px-12 bg-gray-50 dark:bg-[#0f1219] transition-colors duration-300">
+        <div class="max-w-7xl mx-auto text-center">
+            
+            <!-- Section Title -->
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-10">Projects</h2>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded border border-gray-600 text-gray-500 dark:text-gray-400 font-semibold text-sm hover:border-blue-950 hover:text-blue-950 transition-all">
+                    All Projects
+                </button>
+                <button class="px-6 py-2 rounded border border-gray-600 text-gray-500 dark:text-gray-400 font-semibold text-sm hover:border-blue-950 hover:text-blue-950 transition-all">
+                    Frontend
+                </button>
+                <button class="px-6 py-2 rounded border border-gray-600 text-gray-500 dark:text-gray-400 font-semibold text-sm hover:border-blue-950 hover:text-blue-950 transition-all">
+                    Photography
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project Card 1: Onari B -->
+                <div class="group relative bg-white dark:bg-[#1a1f2e] rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                    <!-- Image -->
+                    <div class="h-56 overflow-hidden">
+                        <img src="./assets/Screenshot 2025-12-11 at 23.17.22.png" alt="Onari B Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Content -->
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Glad & Samuel Website</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            Working closely with TheSamuels, I collaborated to ensure that the website not only met but exceeded their expectations.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-col items-center gap-2 mb-8">
+                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Technologies Used</span>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-html5"></i>
+                               <i class="fa-brands fa-css3"></i>
+                                <i class="fa-brands fa-js text-yellow-400 text-lg"></i>
+                                <i class="fa-solid fa-wind text-blue-400 text-lg"></i> <!-- Tailwind approximation -->
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/samuelifeanyi/Glad-Samuel.git" class="px-5 py-2 bg-blue-950 text-white text-sm font-bold rounded hover:bg-emerald-300 transition-colors shadow-lg shadow-blue-400/20">
+                                View GitHub
+                            </a>
+                            <a href="https://becomingthesamuels.vercel.app/" class="px-5 py-2 border border-gray-500 text-gray-500 dark:text-gray-300 text-sm font-bold rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Google Earth Tweet Map -->
+                <div class="group relative bg-white dark:bg-[#1a1f2e] rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                    <!-- Image -->
+                    <div class="h-56 overflow-hidden relative bg-blue-900 flex items-center justify-center">
+                        <img src="./assets/Screenshot 2025-12-11 at 23.31.11.png" alt="">
+                    </div>
+                    <!-- Content -->
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">LaslesVPN</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            It is a well-designed, modern template often used in web design portfolios and development sandboxes. I collaborated to ensure that the interactive design is well presented.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-col items-center gap-2 mb-8">
+                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Technologies Used</span>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
+                                <i class="fa-solid fa-wind text-blue-400 text-lg"></i> <!-- Tailwind approximation -->
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/samuelifeanyi/Landing-Page-Design.git" class="px-5 py-2 bg-blue-950 text-white text-sm font-bold rounded hover:bg-blue-300 transition-colors shadow-lg shadow-blue-400/20">
+                                View Github
+                            </a>
+                            <a href="http://laslesvpn-omega.vercel.app/" class="px-5 py-2 border border-gray-500 text-gray-500 dark:text-gray-300 text-sm font-bold rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: ArcGIS StoryMaps -->
+                <div class="group relative bg-white dark:bg-[#1a1f2e] rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                    <!-- Image -->
+                    <div class="h-56 overflow-hidden bg-emerald-900/20 flex items-center justify-center">
+                        <i class="fa-solid fa-map-location-dot text-8xl text-emerald-500"></i>
+                    </div>
+                    <!-- Content -->
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Methods in Spatial Analysis</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            A deep dive into spatial data. Collaborated to ensure that complex geographical data was presented in an accessible story format.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-col items-center gap-2 mb-8">
+                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Technologies Used</span>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-layer-group text-cyan-400 text-lg"></i>
+                                <i class="fa-brands fa-js text-yellow-400 text-lg"></i>
+                                <i class="fa-solid fa-database text-blue-400 text-lg"></i>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="px-5 py-2 bg-emerald-400 text-gray-900 text-sm font-bold rounded hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-400/20">
+                                View Live Demo
+                            </a>
+                            <a href="#" class="px-5 py-2 border border-gray-500 text-gray-500 dark:text-gray-300 text-sm font-bold rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Onari B (Duplicate for Grid) -->
+                <div class="group relative bg-white dark:bg-[#1a1f2e] rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                    <!-- Image -->
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data Viz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Content -->
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Onari B Website</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            Working closely with the ONARI-B team, I collaborated to ensure that the website not only met but exceeded their expectations.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-col items-center gap-2 mb-8">
+                            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Technologies Used</span>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-brands fa-react text-cyan-400 text-lg"></i>
+                                <i class="fa-brands fa-js text-yellow-400 text-lg"></i>
+                                <i class="fa-solid fa-wind text-blue-400 text-lg"></i>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="px-5 py-2 bg-emerald-400 text-gray-900 text-sm font-bold rounded hover:bg-emerald-300 transition-colors shadow-lg shadow-emerald-400/20">
+                                View Live Demo
+                            </a>
+                            <a href="#" class="px-5 py-2 border border-gray-500 text-gray-500 dark:text-gray-300 text-sm font-bold rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="mt-16">
+                <a href="#" class="px-8 py-3 bg-emerald-400 text-gray-900 font-bold rounded-md shadow-lg shadow-emerald-400/30 hover:bg-emerald-300 transition-all">
+                    View All Projects
+                </a>
+            </div>
+
+        </div>
+    </section>
+
 
     <!-- SCRIPTS -->
     <script>
