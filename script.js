@@ -184,7 +184,7 @@ const codingToolsData = [
     {
         "name": "HTML",
         "img_alt": "HTML",
-        "img_src": "assets/HTML.SVG",
+        "img_src": "assets/HTML.svg",
     },
 
     {
