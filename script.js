@@ -180,106 +180,106 @@ function sendWhatsApp() {
 
 // Skills Data
 
-const codingToolsData = [
-    {
-        "name": "HTML",
-        "img_alt": "HTML",
-        "img_src": "assets/HTML.svg",
-    },
+// const codingToolsData = [
+//     {
+//         "name": "HTML",
+//         "img_alt": "HTML",
+//         "img_src": "assets/HTML.svg",
+//     },
 
-    {
-        "name": "CSS",
-        "img_alt": "CSS",
-        "img_src": "assets/CSS.SVG",
-    },
+//     {
+//         "name": "CSS",
+//         "img_alt": "CSS",
+//         "img_src": "assets/CSS.SVG",
+//     },
 
-    {
-        "name": "JS",
-        "img_alt": "JS",
-        "img_src": "assets/JS.SVG",
-    },
+//     {
+//         "name": "JS",
+//         "img_alt": "JS",
+//         "img_src": "assets/JS.SVG",
+//     },
 
-    {
-        "name": "TAILWINDCSS",
-        "img_alt": "TAILWINDCSS",
-        "img_src": "assets/TAILWINDCSS.SVG",
-    },
+//     {
+//         "name": "TAILWINDCSS",
+//         "img_alt": "TAILWINDCSS",
+//         "img_src": "assets/TAILWINDCSS.SVG",
+//     },
 
-    {
-        "name": "GITHUB",
-        "img_alt": "GITHUB",
-        "img_src": "assets/GITHUB.SVG",
-    },
-]
+//     {
+//         "name": "GITHUB",
+//         "img_alt": "GITHUB",
+//         "img_src": "assets/GITHUB.SVG",
+//     },
+// ]
 
-const skillsContainer = document.getElementById('skills-container');
-console.log(skillsContainer);
+// const skillsContainer = document.getElementById('skills-container');
+// console.log(skillsContainer);
 
-// Map over the JSON array
+// // Map over the JSON array
 
-const codingData = codingToolsData.map((tool) => {
-    return `
-             <div class="flex flex-col items-center gap-2 group cursor-pointer">
-                            <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-700">
-                                <img src="${tool.img_src}" class="w-8 h-8" alt="${tool.img_alt}">
-                            </div>
-                            <span class="text-xs font-mono text-gray-500 dark:text-gray-400">${tool.name}   </span>
-                        </div>
-                   `
-})
+// const codingData = codingToolsData.map((tool) => {
+//     return `
+//              <div class="flex flex-col items-center gap-2 group cursor-pointer">
+//                             <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-700">
+//                                 <img src="${tool.img_src}" class="w-8 h-8" alt="${tool.img_alt}">
+//                             </div>
+//                             <span class="text-xs font-mono text-gray-500 dark:text-gray-400">${tool.name}   </span>
+//                         </div>
+//                    `
+// })
 
-skillsContainer.innerHTML = codingData.join('');
-
-
+// skillsContainer.innerHTML = codingData.join('');
 
 
 
-const photographyToolsData = [
-    {
-        "name": "Lightroom",
-        "img_alt": "Lr",
-        "img_src": "assets/photoshop-lightroom-classic_5968510 (1).png",
-    },
-
-    {
-        "name": "Photoshop",
-        "img_alt": "Ps",
-        "img_src": "assets/adobe-photoshop_5210800.png",
-    },
-
-    {
-        "name": "CaptureOne",
-        "img_alt": "C1",
-        "img_src": "assets/512px-CAPTURE_ONE_LOGO.svg.png",
-    },
-
-    {
-        "name": "Nikon",
-        // "img_alt": "TAILWINDCSS",
-        "img_src": "assets/NIKON.svg",
-    },
-
-    // {
-    //     "namee": "GIT",
-    //     "img_alt": "GIT",
-    //     "img_src": "assets/GITHUB.SVG",
-    // },
-]
 
 
-const photographycontainer = document.getElementById('photography-container');
-console.log(photographycontainer);
+// const photographyToolsData = [
+//     {
+//         "name": "Lightroom",
+//         "img_alt": "Lr",
+//         "img_src": "assets/photoshop-lightroom-classic_5968510 (1).png",
+//     },
+
+//     {
+//         "name": "Photoshop",
+//         "img_alt": "Ps",
+//         "img_src": "assets/adobe-photoshop_5210800.png",
+//     },
+
+//     {
+//         "name": "CaptureOne",
+//         "img_alt": "C1",
+//         "img_src": "assets/512px-CAPTURE_ONE_LOGO.svg.png",
+//     },
+
+//     {
+//         "name": "Nikon",
+//         // "img_alt": "TAILWINDCSS",
+//         "img_src": "assets/NIKON.svg",
+//     },
+
+//     // {
+//     //     "namee": "GIT",
+//     //     "img_alt": "GIT",
+//     //     "img_src": "assets/GITHUB.SVG",
+//     // },
+// ]
 
 
-const photographyData = photographyToolsData.map((tool) => {
-    return `
-     <div class="flex flex-col items-center gap-2 group cursor-pointer">
-                            <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-700">
-                                <img src="${tool.img_src}" class="w-8 h-8 object-contain" alt="${tool.img_alt}">
-                            </div>
-                            <span class="text-xs font-mono text-gray-500 dark:text-gray-400">${tool.name}</span>
-                        </div>
-                        `
-})
+// const photographycontainer = document.getElementById('photography-container');
+// console.log(photographycontainer);
 
-photographycontainer.innerHTML = photographyData.join('');
+
+// const photographyData = photographyToolsData.map((tool) => {
+//     return `
+//      <div class="flex flex-col items-center gap-2 group cursor-pointer">
+//                             <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-700">
+//                                 <img src="${tool.img_src}" class="w-8 h-8 object-contain" alt="${tool.img_alt}">
+//                             </div>
+//                             <span class="text-xs font-mono text-gray-500 dark:text-gray-400">${tool.name}</span>
+//                         </div>
+//                         `
+// })
+
+// photographycontainer.innerHTML = photographyData.join('');
