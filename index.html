@@ -401,170 +401,171 @@
     </section>
 
 
-   <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-24 relative z-10">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- PROJECTS SECTION -->
+<section id="projects" class="py-24 relative z-10">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6 text-center md:text-left" data-aos="fade-up">
+            <div>
+                <h2 class="text-sm font-mono font-bold text-tech-500 tracking-wider uppercase mb-2">Selected Works</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Featured Projects</h3>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="flex gap-2 p-1 bg-white dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-gray-700 mx-auto md:mx-0">
+                <button id="filter-all" class="filter-btn active px-4 py-2 text-sm font-medium rounded-md bg-tech-500 text-white shadow-sm transition-colors">All</button>
+                <button id="filter-code" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors">Code</button>
+                <button id="filter-photo" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors">Photos</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
             
-            <!-- Header: Centered on mobile, original on desktop -->
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6 text-center md:text-left" data-aos="fade-up">
-                <div>
-                    <h2 class="text-sm font-mono font-bold text-tech-500 tracking-wider uppercase mb-2">Selected Works</h2>
-                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Featured Projects</h3>
+            <!-- Project 1: Glad & Samuel -->
+            <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="./assets/Screenshot 2025-12-11 at 23.17.22.png" alt="Glad & Samuel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-                <!-- Filter Buttons Centered on Mobile -->
-                <div class="flex gap-2 p-1 bg-white dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-gray-700 mx-auto md:mx-0">
-                    <button id="filter-all" class="filter-btn active px-4 py-2 text-sm font-medium rounded-md bg-tech-500 text-white shadow-sm transition-colors">All</button>
-                    <button id="filter-code" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors">Code</button>
-                    <button id="filter-photo" class="filter-btn px-4 py-2 text-sm font-medium rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors">Photos</button>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Glad & Samuel</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">A collaborative wedding website project with responsive design and smooth user interactions.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">JS</span>
+                    </div>
+                    <div class="grid grid-cols-3 w-full border-t border-gray-100 dark:border-gray-800 pt-6">
+                        <div class="flex justify-start">
+                            <a href="https://becomingthesamuels.vercel.app/" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                Demo <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="https://github.com/samuelifeanyi/Glad-Samuel.git" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-github"></i> Code <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
+                        </div>
+                        <div class="flex justify-end"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
-                
-                <!-- Project 1: Glad & Samuel -->
-                <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-64 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="./assets/Screenshot 2025-12-11 at 23.17.22.png" alt="Glad & Samuel Website" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project 2: LaslesVPN -->
+            <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="./assets/Screenshot 2025-12-11 at 23.31.11.png" alt="LaslesVPN" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">LaslesVPN</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">Pixel-perfect implementation of a Figma design for a modern VPN service.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
                     </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Glad & Samuel</h3>
-                            <a href="https://github.com/samuelifeanyi/Glad-Samuel.git" target="_blank" class="text-gray-400 hover:text-tech-500 transition"><i class="fa-brands fa-github text-xl"></i></a>
+                    <div class="grid grid-cols-3 w-full border-t border-gray-100 dark:border-gray-800 pt-6">
+                        <div class="flex justify-start">
+                            <a href="http://laslesvpn-omega.vercel.app/" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                               Demo <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
                         </div>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">
-                            A collaborative wedding website project tailored to client specifications, ensuring responsive design and smooth user interactions.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">JS</span>
+                        <div class="flex justify-center">
+                            <a href="https://github.com/samuelifeanyi/Laslesvpn.git" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-github"></i> Code <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://becomingthesamuels.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                View Live Demo <i class="fa-solid fa-arrow-right"></i>
+                        <div class="flex justify-end">
+                            <a href="https://www.figma.com/design/y4g7B9BSJsuPkI101iyF5E/..." target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-figma"></i> Figma <i class="fa-solid fa-arrow-right text-[9px]"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 2: LaslesVPN -->
-                <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-64 overflow-hidden relative bg-blue-900/10">
-                        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="./assets/Screenshot 2025-12-11 at 23.31.11.png" alt="LaslesVPN" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project 3: Treloo (Static) -->
+            <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="./assets/Screenshot 2025-12-11 at 23.55.32.png" alt="Treloo Static" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Treloo (Static)</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">A modern travel agency landing page featuring glassmorphism and travel booking UI.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">CSS</span>
                     </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">LaslesVPN</h3>
-                            <a href="https://github.com/samuelifeanyi/Laslesvpn.git" target="_blank" class="text-gray-400 hover:text-tech-500 transition"><i class="fa-brands fa-github text-xl"></i></a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">
-                            A pixel-perfect implementation of a Figma design for a VPN service, focusing on clean layout and responsive typography.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="http://laslesvpn-omega.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                View Live Demo <i class="fa-solid fa-arrow-right"></i>
+                    <div class="grid grid-cols-3 w-full border-t border-gray-100 dark:border-gray-800 pt-6">
+                        <div class="flex justify-start">
+                            <a href="https://treloo.vercel.app/" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                Demo <i class="fa-solid fa-arrow-right text-[9px]"></i>
                             </a>
-                            <a href="https://www.figma.com/design/y4g7B9BSJsuPkI101iyF5E/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=0-1&p=f&t=IXbSOorB0Tx7FQib-0" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                <i class="fa-brands fa-figma"></i> Figma <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="https://github.com/samuelifeanyi/Treloo.git" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-github"></i> Code <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="https://www.figma.com/design/gKLdrDl62yjhQpLeoEJRk1/..." target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-figma"></i> Figma <i class="fa-solid fa-arrow-right text-[9px]"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 3: Treloo -->
-                <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up" data-aos-delay="300">
-                    <div class="h-64 overflow-hidden relative bg-emerald-900/10">
-                         <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="./assets/Screenshot 2025-12-11 at 23.55.32.png" alt="Treloo Website" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project 4: Treloo (Responsive) -->
+            <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="./assets/Screenshot 2025-12-18 at 00.23.45.png" alt="Treloo Responsive" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Treloo (Responsive)</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">The fully responsive version of the Treloo travel agency page built with Tailwind.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
                     </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Treloo Travel (Not Responsive)</h3>
-                            <a href="https://github.com/samuelifeanyi/Treloo.git" target="_blank" class="text-gray-400 hover:text-tech-500 transition"><i class="fa-brands fa-github text-xl"></i></a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">
-                            A modern travel agency landing page featuring glassmorphism cards, responsive grids, and travel booking UI concepts.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">CSS</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="https://treloo.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                View Live Demo <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="https://www.figma.com/design/gKLdrDl62yjhQpLeoEJRk1/Travel-Agency-Web-UI--Community-?node-id=0-1&p=f&t=AWNlYhlxgqtcI5wM-0" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                <i class="fa-brands fa-figma"></i> Figma <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <div class="grid grid-cols-3 w-full border-t border-gray-100 dark:border-gray-800 pt-6">
+                        <div class="flex justify-start">
+                            <a href="https://treloo-responsive.vercel.app/" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                Demo <i class="fa-solid fa-arrow-right text-[9px]"></i>
                             </a>
                         </div>
+                        <div class="flex justify-center">
+                            <a href="https://github.com/samuelifeanyi/Treloo-Responsive.git" target="_blank" class="inline-flex items-center gap-1 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-2 transition-all whitespace-nowrap">
+                                <i class="fa-brands fa-github"></i> Code <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </a>
+                        </div>
+                        <div class="flex justify-end"></div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 4: Treloo Responsive -->
-                <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-tech-500/10 transition-all duration-300" data-category="code" data-aos="fade-up" data-aos-delay="400">
-                   <div class="h-64 overflow-hidden relative bg-emerald-900/10">
-                        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                       <img src="./assets/Screenshot 2025-12-18 at 00.23.45.png" alt="Treloo Website" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project 5: Photography -->
+            <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300" data-category="photo" data-aos="fade-up">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="./assets/Screenshot 2025-12-11 at 23.44.57.png" alt="Photography" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">SI Photography</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">High-end event and wedding photography portfolio showcasing professional storytelling.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">Lightroom</span>
+                        <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">Photoshop</span>
                     </div>
-                    <div class="p-8">
-                       <div class="flex justify-between items-start mb-4">
-                           <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Treloo Travel (Responsive)</h3>
-                           <a href="https://github.com/samuelifeanyi/Treloo-Responsive.git" target="_blank" class="text-gray-400 hover:text-tech-500 transition"><i class="fa-brands fa-github text-xl"></i></a>
-                       </div>
-                       <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">
-                           A responsive modern travel agency landing page featuring glassmorphism cards, responsive grids, and travel booking UI concepts.
-                       </p>
-                       <div class="flex flex-wrap gap-2 mb-6">
-                           <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">HTML</span>
-                           <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">TAILWIND CSS</span>
-                       </div>
-                       <div class="flex items-center justify-between">
-                            <a href="https://treloo-responsive.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
-                                View Live Demo <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                   </div>
-               </div>
-
-                <!-- Project 5: Photography -->
-                <div class="project-item group rounded-2xl overflow-hidden bg-white dark:bg-dark-card border border-gray-200 dark:border-dark-border hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300" data-category="photo" data-aos="fade-up" data-aos-delay="500">
-                    <div class="h-64 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10"></div>
-                        <img src="./assets/Screenshot 2025-12-11 at 23.44.57.png" alt="SI Photography" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Samuel Ifeanyi Photography</h3>
-                             <a href="https://www.instagram.com/samuelifeanyiphotography/" target="_blank" class="text-gray-400 hover:text-pink-600 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-2">
-                            High-end event and wedding photography portfolio showcasing color grading, composition, and visual storytelling.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">Lightroom</span>
-                            <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-tech-100 dark:bg-tech-900/30 text-tech-600 dark:text-tech-400">Photoshop</span>
-                        </div>
-                        <a href="https://www.instagram.com/p/DRIOYV8iDhm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
+                    <div class="border-t border-gray-100 dark:border-gray-800 pt-6">
+                        <a href="https://www.instagram.com/samuelifeanyiphotography/" target="_blank" class="inline-flex items-center gap-2 text-[10px] sm:text-sm font-bold text-tech-600 dark:text-tech-400 hover:gap-3 transition-all">
                             View Gallery <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-
             </div>
 
-             <div class="mt-16 text-center">
-                <a href="https://github.com/samuelifeanyi" target="_blank" class="inline-block px-8 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-gray-200 dark:border-gray-700 font-bold rounded-lg shadow-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-all">
-                    Load More Projects
-                </a>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
+   
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-24 relative z-10">
